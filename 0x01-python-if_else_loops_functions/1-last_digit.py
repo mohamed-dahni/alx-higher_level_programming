@@ -13,8 +13,6 @@ def main():
     last_digit = get_last_digit(number)
     description = ""
 
-
-
     if last_digit > 5:
         description = "greater than 5"
     elif last_digit == 0:
