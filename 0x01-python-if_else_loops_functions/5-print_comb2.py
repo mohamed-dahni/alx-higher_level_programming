@@ -6,7 +6,6 @@ def main():
             print("{:02d}".format(i))
         else:
             print("{:02d}, ".format(i), end="")
-    
 
 
 if __name__ == "__main__":
