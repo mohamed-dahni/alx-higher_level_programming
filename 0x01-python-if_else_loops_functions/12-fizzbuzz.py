@@ -13,4 +13,4 @@ def fizzbuzz():
         else:
             str_to_print += f"{i} "
 
-    print(str_to_print)
+    print(str_to_print, end="")
