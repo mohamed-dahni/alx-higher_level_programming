@@ -2,7 +2,7 @@
 
 def main():
     for c in "abcdefghijklmnopqrstuvwxyz":
-        if c in "qe":
+        if not c in "qe":
             print("{}".format(c), end="")
 
 
