@@ -21,3 +21,6 @@ def main():
         description = "less than 6 and not 0"
 
     print(f"Last digit of {number} is {last_digit} and is {description}")
+
+if __name__ == "__main__":
+    main()
