@@ -3,9 +3,9 @@
 def main():
     for i in range(0, 100):
         if i == 99:
-            print()
+            print("{:02d}".format(i))
         else:
-            print("{}, ".format(i), end="")
+            print("{:02d}, ".format(i), end="")
     
 
 
