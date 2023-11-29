@@ -6,7 +6,7 @@ def main():
             if i != j:
                 print("{}{}".format(i, j), end="")
                 if i != 8 or j != 9:
-                    print("{}".format(", "), end="")
+                    print(", ", end="")
 
     print()
 
