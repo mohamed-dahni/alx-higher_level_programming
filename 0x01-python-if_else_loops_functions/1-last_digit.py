@@ -2,12 +2,14 @@
 
 import random
 
+
 def get_last_digit(number):
     """ Determine the last digit of a number """
     last_digit = abs(number) % 10
     if number < 0:
         last_digit = -last_digit
     return last_digit
+
 
 def main():
     number = random.randint(-10000, 10000)
@@ -22,6 +24,7 @@ def main():
         description = "less than 6 and not 0"
 
     print(f"Last digit of {number} is {last_digit} and is {description}")
+
 
 if __name__ == "__main__":
     main()
