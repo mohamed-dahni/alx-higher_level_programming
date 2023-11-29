@@ -3,7 +3,7 @@
 def fizzbuzz():
     str_to_print = ""
 
-    for i in range(0, 101):
+    for i in range(1, 101):
         if (i % 3) == 0 and (i % 5) == 0:
             str_to_print += "FizzBuzz "
         elif (i % 3) == 0:
