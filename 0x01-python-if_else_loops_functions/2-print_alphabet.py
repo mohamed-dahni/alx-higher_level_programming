@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 def main():
-    print("abcdefghijklmnopqrstuvwxyz")
+    for c in "abcdefghijklmnopqrstuvwxyz":
+        print("{}".format(c), end="")
 
 
 if __name__ == "__main__":
