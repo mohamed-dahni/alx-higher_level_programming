@@ -10,6 +10,7 @@ def main():
         result = result + int(arg)
 
     print("{}".format(result))
+    
 
 if __name__ == "__main__":
     main()
