@@ -6,8 +6,7 @@ from sys import argv
 def main():
     result = 0
 
-    for i, arg in enumerate(argv):
-
+    for i, arg in enumerate(argv[1:]):
         result = result + int(arg)
 
     print("{}".format(result))
