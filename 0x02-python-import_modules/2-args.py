@@ -4,10 +4,11 @@ from sys import argv
 
 
 def main():
-    print("{} arguments.".format(len(argv)))
+    arg_count = len(argv) - 1
+    print("{} arguments.".format(arg_count))
           
-    for i, arg in enumerate(argv):
-        print("{}: {}".format(i + 1, arg))
+    for i, arg in enumerate(argv[1:], start=1):
+        print("{}: {}".format(i, arg))
 
 
 if __name__ == "__main__":
