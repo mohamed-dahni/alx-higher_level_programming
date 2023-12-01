@@ -8,7 +8,7 @@ def main():
     if arg_count == 0:   
         print("{} arguments.".format(arg_count))
     elif arg_count == 1:
-        print("{} argument.".format(arg_count))
+        print("{} argument:".format(arg_count))
     else:
         print("{} arguments:".format(arg_count))
 
