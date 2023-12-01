@@ -8,7 +8,7 @@ def main():
     if arg_count == 1:   
         print("{} argument.".format(arg_count))
     else:
-        print("{} arguments.".format(arg_count))
+        print("{} arguments:".format(arg_count))
 
     for i, arg in enumerate(argv[1:], start=1):
         print("{}: {}".format(i, arg))
