@@ -6,7 +6,7 @@ from sys import argv
 def main():
     print("{} arguments.".format(len(argv)))
           
-    for i, arg in argv:
+    for i, arg in enumerate(argv):
         print("{}: {}".format(i + 1, arg))
 
 
