@@ -8,4 +8,4 @@ def print_matrix_integer(matrix=[[]]):
             if i < row_count - 1:
                 print(" ", end="")
             else:
-                print("$")
+                print()
