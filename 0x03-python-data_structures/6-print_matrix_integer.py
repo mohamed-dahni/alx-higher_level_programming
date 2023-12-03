@@ -10,7 +10,6 @@ def print_matrix_integer(matrix=[[]]):
         for i, col in enumerate(row):
             print("{:d}".format(col), end="")
             if i < row_count - 2:
-                print(" ")
+                print(" ", end="")
             else:
                 print("$")
-        print()

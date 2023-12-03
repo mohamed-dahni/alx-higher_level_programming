@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-new_in_list = __import__('3-print_reversed_list_integer.py').new_in_list
+print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 
-my_list = [1, 2, 3, 4, 5]
-print(new_in_list(my_list))
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print_matrix_integer(matrix)
+print("--")
+print_matrix_integer()
