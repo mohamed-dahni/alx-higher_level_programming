@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-
-def main():
-    print(dir())
-
-
 if __name__ == "__main__":
-    main()
+    for i in dir():
+        print(i)
