@@ -8,5 +8,5 @@ def uniq_add(my_list=[]):
         if number not in uniq_list:
             result = result + number
             uniq_list.append(number)
-    
+
     return result
