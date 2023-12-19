@@ -7,7 +7,7 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end="")
             printed_count = printed_count + 1
-        except BaseException:
+        except (TypeError, ValueError):
             continue
     print()
     return printed_count
