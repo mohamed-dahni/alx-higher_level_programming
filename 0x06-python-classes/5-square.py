@@ -24,7 +24,6 @@ class Square:
         for i in range(self.__size):
             print("#" * self.__size)
 
-
     def area(self):
         """Returns the area of the square."""
         return self.__size ** 2
