@@ -14,6 +14,17 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    def my_print(self):
+        """
+        Prints the square with the # character by iterating over
+        the size of the square.
+        """
+        if self.__size == 0:
+            return
+        for i in range(self.__size):
+            print("#" * self.__size)
+
+
     def area(self):
         """Returns the area of the square."""
         return self.__size ** 2
