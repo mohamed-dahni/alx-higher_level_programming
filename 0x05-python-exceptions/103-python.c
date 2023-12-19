@@ -8,10 +8,10 @@
 #include <string.h>
 
 /**
- * print_python_bytes_info - print information about Python bytes objects
+ * print_python_bytes - print information about Python bytes objects
  * @p: pointer to PyObject p
  */
-void print_python_bytes_info(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
     size_t b, i;
     char *str;
@@ -33,10 +33,10 @@ void print_python_bytes_info(PyObject *p)
 }
 
 /**
- * print_python_float_info - print information about Python float objects
+ * print_python_float - print information about Python float objects
  * @p: pointer to PyObject p
  */
-void print_python_float_info(PyObject *p)
+void print_python_float(PyObject *p)
 {
     char *str;
     double f;
@@ -55,10 +55,10 @@ void print_python_float_info(PyObject *p)
 }
 
 /**
- * print_python_list_info - print information about Python list objects
+ * print_python_list - print information about Python list objects
  * @p: pointer to PyObject p
  */
-void print_python_list_info(PyObject *p)
+void print_python_list(PyObject *p)
 {
     size_t a, size, i;
     const char *t;
@@ -80,8 +80,8 @@ void print_python_list_info(PyObject *p)
         t = (list->ob_item[i])->ob_type->tp_name;
         printf("Element %li: %s\n", i, t);
         if (!strcmp(t, "bytes"))
-            print_python_bytes_info(list->ob_item[i]);
+            print_python_bytes(list->ob_item[i]);
         else if (!strcmp(t, "float"))
-            print_python_float_info(list->ob_item[i]);
+            print_python_float(list->ob_item[i]);
     }
 }
