@@ -10,20 +10,12 @@ class Square:
         size: size of a square (1 side).
     """
     def __init__(self, size=0, position=(0, 0)):
-        """Creates new instances of square.
-
-        Args:
-            __size (int): size of the square (1 side).
-            __position (tuple): position of the square.
-        """
+        """Creates new instances of square."""
         self.size = size
         self.position = position
 
     def area(self):
-        """Calculates the area of square.
-
-        Returns: the current square area.
-        """
+        """Calculates the area of square."""
         return self.__size ** 2
 
     @property
@@ -34,15 +26,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """Property setter for size.
-
-        Args:
-            value (int): size of a square (1 side).
-
-        Raises:
-            TypeError: size must be an integer.
-            ValueError: size must be >= 0.
-        """
+        """Property setter for size."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -57,14 +41,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """Property setter for position.
-
-        Args:
-            value (tuple): position of the square.
-
-        Raises:
-            TypeError: position must be a tuple of 2 positive integers
-        """
+        """Property setter for position."""
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
