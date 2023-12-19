@@ -3,12 +3,7 @@
 
 
 class Square:
-    """
-    Class that defines properties of square by: (based on 5-square.py).
-
-    Attributes:
-        size: size of a square (1 side).
-    """
+    """Class that defines properties of square by: (based on 5-square.py)."""
     def __init__(self, size=0, position=(0, 0)):
         """Creates new instances of square."""
         self.size = size
@@ -20,8 +15,7 @@ class Square:
 
     @property
     def size(self):
-        """Returns the size of a square
-        """
+        """Returns the size of a square"""
         return self.__size
 
     @size.setter
@@ -53,8 +47,7 @@ class Square:
         self.__position = value
 
     def my_print(self):
-        """prints in stdout the square with the character #
-        """
+        """prints in stdout the square with the character #"""
 
         if self.__size == 0:
             print()
