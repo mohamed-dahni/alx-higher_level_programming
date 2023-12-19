@@ -11,4 +11,4 @@ def safe_print_list(my_list=[], x=0):
     except IndexError as er:
         print(er)
 
-    return printed_count
+    print("nb_print: {}".format(printed_count))
