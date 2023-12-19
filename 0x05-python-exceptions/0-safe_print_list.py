@@ -12,3 +12,5 @@ def safe_print_list(my_list=[], x=0):
         print(er)
 
     print("nb_print: {}".format(printed_count))
+
+    return printed_count
