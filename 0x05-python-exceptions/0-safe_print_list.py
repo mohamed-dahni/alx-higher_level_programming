@@ -8,8 +8,8 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end="")
             printed_count = printed_count + 1
         print()
-    except IndexError as er:
-        print(er)
+    except IndexError:
+        pass
 
     print("nb_print: {}".format(printed_count))
 
