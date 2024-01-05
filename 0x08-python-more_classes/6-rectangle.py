@@ -4,13 +4,13 @@
 
 class Rectangle:
     """ class rectangle """
-    number_of_rectangles = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """ init method """
         self.height = height
         self.width = width
-        number_of_rectangles = number_of_rectangles + 1
+        number_of_instances = number_of_instances + 1
 
     @property
     def width(self):
@@ -63,5 +63,5 @@ class Rectangle:
 
     def __del__(self):
         """ prints a message when the object is destroyed """
-        number_of_rectangles = number_of_rectangles - 1
+        number_of_instances = number_of_instances - 1
         print("Bye rectangle...")
