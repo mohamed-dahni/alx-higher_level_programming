@@ -50,10 +50,7 @@ class Rectangle:
 
     def __str__(self):
         """ returns string representation of Rectangle """
-        if self.__width == 0 or self.__height == 0:
+        if self.__width is 0 or self.__height is 0:
             return ""
-
-        rec = ""
-        for i in range(self.__height):
-            rec = rec + "#" * self.__width + "\n"
-        return rec
+        return ("\n".join(["".join(["#" for i in range(self.__width)])
+                for j in range(self.__height)]))
