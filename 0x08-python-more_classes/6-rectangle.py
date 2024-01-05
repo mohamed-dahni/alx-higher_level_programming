@@ -10,7 +10,7 @@ class Rectangle:
         """ init method """
         self.height = height
         self.width = width
-        number_of_rectangles += 1
+        number_of_rectangles = number_of_rectangles + 1
 
     @property
     def width(self):
