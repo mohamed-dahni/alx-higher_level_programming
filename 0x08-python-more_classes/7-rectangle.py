@@ -51,14 +51,6 @@ class Rectangle:
             return 0
         return 2 * self.__width + 2 * self.__height
 
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        if type(rect_1) is not Rectangle:
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) is not Rectangle:
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        return rect_1 if rect_1.area() >= rect_2.area() else rect_2
-
     def __str__(self):
         """ returns string representation of Rectangle """
         if self.__width is 0 or self.__height is 0:
