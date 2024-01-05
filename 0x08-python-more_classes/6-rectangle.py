@@ -63,4 +63,5 @@ class Rectangle:
 
     def __del__(self):
         """ prints a message when the object is destroyed """
+        number_of_rectangles = number_of_rectangles - 1
         print("Bye rectangle...")
