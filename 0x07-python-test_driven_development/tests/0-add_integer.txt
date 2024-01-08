@@ -1,23 +1,41 @@
->>> add_integer = __import__('0-add_integer').add_integer
->>> add_integer(1, 2)
-3
->>> add_integer(100, -2)
-98
->>> add_integer(2)
-100
->>> add_integer(100.3, -2)
-98.3
->>> try:
-...     add_integer(4, "School")
-... except Exception as e:
-...     e
-... 
-TypeError('b must be an integer')
->>> try:
-...     add_integer(None)
-... except Exception as e:
-...     e
-... 
-TypeError('a must be an integer')
->>> add_integer(0)
-98
+The ``0-add_integer`` module
+==============================
+
+Using ``add_integer``
+---------------------
+
+Test passing two positive numbers:
+    >>> add_integer(1, 2)
+    3
+
+Test passing a positive number and a negative number:
+    >>> add_integer(100, -2)
+    98
+
+Test passing just a positive number:
+    >>> add_integer(2)
+    100
+
+Test passing a flaoting point number and a negative number:
+    >>> add_integer(100.3, -2)
+    98.3
+
+Test passing a number and a string:
+    >>> try:
+    ...     add_integer(4, "School")
+    ... except Exception as e:
+    ...     e
+    ... 
+    TypeError('b must be an integer')
+
+Test passing a None:
+    >>> try:
+    ...     add_integer(None)
+    ... except Exception as e:
+    ...     e
+    ... 
+    TypeError('a must be an integer')
+
+Test passing zero:
+    >>> add_integer(0)
+    98
