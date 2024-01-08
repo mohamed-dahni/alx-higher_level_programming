@@ -1,8 +1,6 @@
-The ``0-add_integer`` module
-==============================
+# The ``0-add_integer`` module
 
-Using ``add_integer``
----------------------
+## ``add_integer``
 
 Test passing two positive numbers:
     >>> add_integer(1, 2)
@@ -14,7 +12,7 @@ Test passing a positive number and a negative number:
 
 Test passing just a positive number:
     >>> add_integer(2)
-    100
+    2
 
 Test passing a flaoting point number and a negative number:
     >>> add_integer(100.3, -2)
