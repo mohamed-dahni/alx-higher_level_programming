@@ -37,3 +37,7 @@ Test passing a None:
 Test passing zero:
     >>> add_integer(0)
     98
+
+Test for Large Integers:
+    >>> add_integer(10**10, 5)
+    10000000005
