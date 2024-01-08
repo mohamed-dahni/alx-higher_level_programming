@@ -18,3 +18,5 @@ TypeError('b must be an integer')
 ...     e
 ... 
 TypeError('a must be an integer')
+>>> add_integer(0)
+98
