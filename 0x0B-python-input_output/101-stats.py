@@ -1,19 +1,10 @@
 #!/usr/bin/python3
-"""Reads from standard input and computes metrics.
-
-After every ten lines or the input of a keyboard interruption (CTRL + C),
-prints the following statistics:
-    - Total file size up to that point.
-    - Count of read status codes up to that point.
+"""Reads from standard input and computes metrics
 """
 
 
 def print_stats(size, status_codes):
-    """Print accumulated metrics.
-
-    Args:
-        size (int): The accumulated read file size.
-        status_codes (dict): The accumulated count of status codes.
+    """Print accumulated metrics
     """
     print("File size: {}".format(size))
     for key in sorted(status_codes):
@@ -48,7 +39,9 @@ if __name__ == "__main__":
                     if status_codes.get(line[-2], -1) == -1:
                         status_codes[line[-2]] = 1
                     else:
-                        pass
+                        status_codes[line[-2]] += 1
+            except IndexError:
+                pass
 
         print_stats(size, status_codes)
 
