@@ -1,2 +1,3 @@
 #!/bin/bash
+# This script compiles the Python file specified in the PYFILE environment variable
 python3 -m py_compile "$PYFILE"
