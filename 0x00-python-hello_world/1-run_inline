@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script runs the Python code defined in the PYCODE environment variable
+
+python3 -c "$PYCODE"
